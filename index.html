@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gregson Mwavuna Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #0f0f1a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00fff7;
+      text-decoration: none;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 0.5rem;
+    }
+
+    /* Photo */
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin: 1rem auto;
+      display: block;
+      border: 3px solid #00fff7;
+      box-shadow: 0 0 20px #00fff7;
+      background: #222;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      color: #00fff7;
+      text-shadow: 0 0 5px #00fff7;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #1a1a2e;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00fff7;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00fff7, 0 0 30px #00fff7;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      margin-top: 1rem;
+      border: 2px solid #00fff7;
+      border-radius: 8px;
+      color: #00fff7;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+      background: #00fff7;
+      color: #0f0f1a;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gregson Mwavuna</h1>
+    <h2>Computer Science Student | Developer</h2>
+    <div class="profile-photo" id="profilePhoto"></div>
+  </header>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+      <h3>About Me</h3>
+      <p>
+        I am a third-year Computer Science student at Maseno University passionate about software development, embedded systems, and web applications. I enjoy creating practical solutions using Java, Kotlin, React, Node.js, MySQL, and IoT devices like Arduino and ESP32.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="cards">
+        <div class="card">Java & Kotlin Programming</div>
+        <div class="card">Android Development</div>
+        <div class="card">React & Node.js</div>
+        <div class="card">MySQL & Database Management</div>
+        <div class="card">Arduino & ESP32 Projects</div>
+        <div class="card">Networking & IoT Systems</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>KUCCPS Guidance App</h4>
+          <p>Web-based platform helping students choose courses and apply for KUCCPS.</p>
+        </div>
+        <div class="card">
+          <h4>ESP32 RC Car</h4>
+          <p>Remotely controlled car using ESP32 and Android app.</p>
+        </div>
+        <div class="card">
+          <h4>Church Management System</h4>
+          <p>Mobile app to manage church operations and member database.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h3>Contact Me</h3>
+      <p>Email: <a href="mailto:gregsonmwavuna3@gmail.com">gregsonmwavuna3@gmail.com</a></p>
+      <p>Phone: 0708612010 | 0713048747</p>
+      <a href="mailto:gregsonmwavuna3@gmail.com" class="btn">Send Message</a>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Gregson Mwavuna. All Rights Reserved.
+  </footer>
+
+  <script>
+    // Replace with your photo URL
+    document.getElementById('profilePhoto').style.backgroundImage = 'url("https://via.placeholder.com/180")';
+  </script>
+</body>
+</html>
